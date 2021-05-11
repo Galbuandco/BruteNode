@@ -10,7 +10,7 @@ The tool need a little configuration to run. You will nedd the folowing things:
 3) A username list  
 
 To fullfill requirement number 1 follow this instruction: First open chrome dev tools on the network tab, then make the login with random credentials. At this point new post request just copy that request by making right click copy as Node Js fetch, then paste it in the code
-( there is this comment //insert the request copied from chrome as explained in README on my code, so you can't fail) and then substituite your username and your password with ${utenti[i]} and ${passwd}. Most of the time this will be enought.
+( there is this comment  //insert the request copied from chrome as explained in README on my code, so you can't fail) and then substituite your username and your password with ${utenti[i]} and ${passwd}. Most of the time this will be enought.
 
 Just a couple of consideration before continuing. First this approch of manual substituition is not automated because every site use custome request. Second, as this software is 
 made for authentication with JSNO web tokens it checks if the token in the response is null to know if the authentication is successful but be careful that sometimes the name of the token 
