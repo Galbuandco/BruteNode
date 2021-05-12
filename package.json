@@ -1,0 +1,30 @@
+{
+  "name": "brutenode",
+  "version": "1.0.0",
+  "description": "A multiprocess bruteforce script for logins which use json ajax calls with json tokens",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Galbuandco/BruteNode.git"
+  },
+  "keywords": [
+    "brutefroce",
+    "json",
+    "ajax.tokens",
+    "multiprocess"
+  ],
+  "author": "Bischiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Galbuandco/BruteNode/issues"
+  },
+  "homepage": "https://github.com/Galbuandco/BruteNode#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "line-by-line": "^0.1.6",
+    "node-fetch": "^2.6.1"
+  }
+}
