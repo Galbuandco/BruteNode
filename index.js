@@ -49,22 +49,7 @@ if (cluster.isMaster) {
         lr.pause();
         var i = 0
         //insert the request copied from chrome as explained in README
-        
-        fetch("https://rgi.it/api/rest/admin/login", {
-            "credentials": "include",
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0",
-                "Accept": "application/json, text/plain, */*",
-                "Accept-Language": "it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3",
-                "Content-Type": "application/json;charset=utf-8",
-                "RGI_executionId": "9xy8e7j75wrc4wh5ns",
-                "RGI_locale": "it"
-            },
-            "referrer": "https://rgi.it/portal/",
-            "body": `{\"loginUser\":{\"username\":\"${utenti[i]}\",\"password\":\"${passwd}\"}}`,
-            "method": "POST",
-            "mode": "cors"
-        }
+    
         ).then(result => result.json())
             .then((json) => {
                 if (json.token != null) { // change this condition if needed
